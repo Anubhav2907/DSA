@@ -18,5 +18,5 @@ bool subarrayWithSum(int arr[], int n, int k){
 }
 int main(){
     int arr[] = {2,3,4,62,2,3,4};
-    cout << boolalpha << subarrayWithSum(arr,7,63);
+    cout << boolalpha << subarrayWithSum(arr,7,9);
 }

@@ -23,10 +23,9 @@ double median(int arr1[], int arr2[], int n1, int n2){
             begin1 = i1+1;
         }
     }
-
 }
 int main(){
-    int a1[] = {20,40,50,60};
-    int a2[] = {5,6,7,8,9};
-    cout << median(a1, a2,4,5);
+    int a1[] = {20,30,40,50};
+    int a2[] = {25,28,33,37,39,45};
+    cout << median(a1, a2,4,6);
 }

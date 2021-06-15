@@ -23,3 +23,7 @@ int search(int arr[], int n, int k){
         }
     }
 }
+int main(){
+    int arr[] = {5,6,7,8,9,10,1,2,3};
+    cout << search(arr, 9, 10);
+}

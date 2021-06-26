@@ -4,6 +4,7 @@
         "random": "cpp",
         "ostream": "cpp",
         "sstream": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "new": "cpp"
     }
 }

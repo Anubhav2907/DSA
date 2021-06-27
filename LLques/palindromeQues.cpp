@@ -20,20 +20,18 @@ Node *reverse(Node *head){
     return prev;
 }
 bool is_palindrome(Node *head){
-    Node *slow = head;
+    Node *slow= head;
     Node *fast = head;
-    while(fast!=NULL && fast->next!=NULL){
+    while(fast!= NULL && fast->next!=NULL){
         slow = slow->next;
         fast = fast->next->next;
     }
-    Node *rev = reverse(slow);
+    Node *temp = reverse(head);
     Node *curr = head;
-    while(rev!=NULL){
-        if(rev->data != curr->data){
+    while(temp!= NULL){
+        if(temp->next != curr->next){
             return false;
         }
-        rev = rev->next;
-        curr = curr->next;
     }
     return true;
 }

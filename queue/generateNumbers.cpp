@@ -15,6 +15,5 @@ void generateNumbers(int n){
 int main() 
 { 
 	int n = 5;
-		
 	generateNumbers(n);
 } 

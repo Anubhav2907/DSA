@@ -1,0 +1,1 @@
+{"name":"Local: CHEFBULB","url":"c:\\Users\\ASUS\\Desktop\\cpp\\codechef\\CHEFBULB.cpp","tests":[{"id":1628503372299,"input":"4\n10 5 5\n10 6 5\n10 4 5\n10 8 5","output":"2\n4\n9\n8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\ASUS\\Desktop\\cpp\\codechef\\CHEFBULB.cpp","group":"local","local":true}

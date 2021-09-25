@@ -1,40 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
-struct Node
-{
-    int key;
-    struct Node *left;
-    struct Node *right;
-    Node(int k)
-    {
-        key = k;
-        left = right = NULL;
+int main(){
+    int n, k;
+    cin >> n;
+    cin >> k;
+    vector<int> v;
+    for(int i =0 ; i< n; i++){
+        int data;
+        cin >> data;
+        c.push_back(data);
     }
-};
-void printLevel(Node *head)
-{
-    if (head == NULL)
-        return;
-    queue<Node *> q;
-    q.push(head);
-    q.push(NULL);
-    while (!q.empty())
-    {
-        Node *temp = q.front();
-        q.pop();
-        if (temp == NULL)
-        {
-            cout << endl;
-            q.push(NULL);
-            continue;
-        }
-        cout << temp->key << " ";
-        if (temp->left != NULL)
-        {
-            q.push(temp->left);
-        }
-        if (temp->right != NULL)
-        {
-            q.push(temp->right);
-        }
+    for(int i =1 ; i< n; i++){
+        v[i] = v[i]+v[i-1];
     }
+    for(int i =1 ; i< k; i++){
+        int a, b;
+        cin >> a >> b;
+        cout << v[b] - v[a];
+    }
+
+}
